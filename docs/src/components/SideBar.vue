@@ -1,7 +1,7 @@
 <template>
   <aside class="sidebar">
     <h1>
-      <a class="app-name-link" data-nosearch="" href="/">My Components</a>
+      <a class="app-name-link" data-nosearch="" href="/">Guide</a>
     </h1>
     <div class="sidebar-nav">
       <ul>
@@ -33,7 +33,7 @@ export default {
         {
           title: 'Components',
           pages: [
-            { to: '/vue-tasty-burger', title: 'Tasty burger' }
+            { to: '/tasty-burger-button', title: 'Tasty burger button' }
           ]
         }
       ]
