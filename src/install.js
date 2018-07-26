@@ -1,13 +1,16 @@
-import VueTastyBurger from './components/BurgerButton.vue'
+import TastyBurgerButton from './components/BurgerButton.vue'
 
-const install = (Vue, options = {}) => {
-  console.log(VueTastyBurger);
-  Vue.component('vue-tasty-burger', VueTastyBurger);
+function install(Vue, options) {
+  console.log(options);
+  Vue.component('tasty-burger-button', TastyBurgerButton);
+  let key = 'tasty-burger-button';
+  key = (options && options.prefix) ? `${options.prefix}-${key}` : key;
+  Vue.component(key, TastyBurgerButton);
 }
 
-// auto install
+// Automatic installation if Vue has been added to the global scope.
 if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue)
+  window.Vue.use({ install });
 }
 
-export { install }
+export { install, TastyBurgerButton };
