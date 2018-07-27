@@ -1,7 +1,6 @@
 import TastyBurgerButton from './components/BurgerButton.vue'
 
 function install(Vue, options) {
-  console.log(options);
   Vue.component('tasty-burger-button', TastyBurgerButton);
   let key = 'tasty-burger-button';
   key = (options && options.prefix) ? `${options.prefix}-${key}` : key;
