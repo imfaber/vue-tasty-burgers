@@ -27,7 +27,8 @@ export default {
         {
           title: 'Getting started',
           pages: [
-            { to: 'quick-start', title: 'Quick start' }
+            { to: 'quick-start', title: 'Quick start' },
+            { to: 'install-for-dev', title: 'Install for development' }
           ]
         },
         {

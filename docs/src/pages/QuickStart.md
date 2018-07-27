@@ -1,23 +1,14 @@
 # Quick Start
 
-## Install (without npm)
+## Install
 
-Clone the Git repository of this library and link it.
+Install with npm:
 
 ```bash
-git clone [your Git repostiory]
-cd vue-tasty-burgers
-npm install
-npm run build
-npm link
+npm install vue-tasty-burgers
 ```
 
-In your client project root folder:
-```bash
-npm link vue-tasty-burgers
-```
-
-## Use the library
+## Use the library (Global Registration)
 
 ```javascript
 // main.js
@@ -42,3 +33,23 @@ Vue.use(TastyBurgerButton, { prefix: 'abc' });
 Results in:
 
 * Components such as `<tasty-burger-button>` becomes `<abc-tasty-burger-button>`
+
+## Use the library (Local Registration)
+  
+```html
+// your-component.js
+<template>
+    <tasty-burger-button />
+</template>
+
+<script>
+import {TastyBurgerButton} from 'vue-tasty-burgers';
+import 'vue-tasty-burgers/dist/vue-tasty-burgers.css';
+
+export default {
+  components: {
+    'tasty-burger-button': TastyBurgerButton
+  }
+}
+</script>
+```

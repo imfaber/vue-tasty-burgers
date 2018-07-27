@@ -24,7 +24,7 @@ export default {
 
 <style>
   body{
-    overflow: auto !important;
+    overflow-y: auto !important;
   }
   .markdown-section table {
     display: table;

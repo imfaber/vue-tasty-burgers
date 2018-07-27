@@ -83,6 +83,9 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.2"
   },
+  "main": "dist/vue-tasty-burgers.js",
+  "module": "dist/vue-tasty-burgers.js",
+  "jsnext:main": "dist/vue-tasty-burgers.js",
   "files": [
     "dist"
   ]
