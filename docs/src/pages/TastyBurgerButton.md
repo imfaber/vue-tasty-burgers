@@ -24,17 +24,17 @@ export default {
 ### Props
 
 Name                 | Type       | Default      | Required | Description
-----------------     | ---------- | ------------ | -------- | ------------------------------------------------
+---------------------|------------|--------------|----------|-------------------------------------------------
 `type`               | String     | boring       | false    | The type of burger button
 `active`             | Boolean    | false        | false    | Determines if the button is in the active state
 
 #### Available burgers
 
-Type            | Usage example                        | Demo       
-----------------|--------------------------------------|----------------------------------------------------------
-`3dx`           | `<tasty-burger-button type="3dx" />`    | <tasty-burger-button type="3dx" />
-`3dy`           | `<tasty-burger-button type="3dy" />`    | <tasty-burger-button type="3dy" />
-`3dxy`          | `<tasty-burger-button type="3dxy" />`    | <tasty-burger-button type="3dxy" />
+Type            | Usage example                              | Demo       
+----------------|--------------------------------------------|:--------------------------------------------------:
+`3dx`           | `<tasty-burger-button type="3dx" />`       | <tasty-burger-button type="3dx" />
+`3dy`           | `<tasty-burger-button type="3dy" />`       | <tasty-burger-button type="3dy" />
+`3dxy`          | `<tasty-burger-button type="3dxy" />`      | <tasty-burger-button type="3dxy" />
 `arrowalt`      | `<tasty-burger-button type="arrowalt" />`    | <tasty-burger-button type="arrowalt" />
 `arrowturn`     | `<tasty-burger-button type="arrowturn" />`    | <tasty-burger-button type="arrowturn" />
 `boring`        | `<tasty-burger-button type="boring" />`    | <tasty-burger-button type="boring" />
@@ -50,8 +50,20 @@ Type            | Usage example                        | Demo
 `vortex`           | `<tasty-burger-button type="vortex" />`    | <tasty-burger-button type="vortex" />
 
 
+##### Note
+Note: You can reverse the animation by adding `-r` as type suffix.
+
+Type            | Usage example                            | Demo       
+----------------|------------------------------------------|:-----------------------------------------:
+`spin`          | `<tasty-burger-button type="spin" />`    | <tasty-burger-button type="spin" />
+`spin-r`        | `<tasty-burger-button type="spin-r" />`  | <tasty-burger-button type="spin-r" />
 
 
+### Events
+
+Name                 | Params      | Description
+---------------------|-------------|------------------------------------------------
+`toggle`             | active      | Fired after the button is clicked and its active state changed
 
 
 

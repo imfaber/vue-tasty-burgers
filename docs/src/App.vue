@@ -1,7 +1,7 @@
 <template>
   <main>
     <app-sidebar />
-    <section class="content" style="overflow:auto;">
+    <section class="content">
       <article class="markdown-section">
         <router-view></router-view>
         <app-footer />
@@ -21,3 +21,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  body{
+    overflow: auto !important;
+  }
+  .markdown-section table {
+    display: table;
+  }
+</style>

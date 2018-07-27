@@ -1,7 +1,7 @@
 <template>
     <button type="button" class="hamburger"
-            v-bind:class="[isActive ? 'is-active' : '', burgerTypeClass]"
-            v-on:click="toggle">
+            :class="[isActive ? 'is-active' : '', burgerTypeClass]"
+            @click.prevent="toggle">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -11,11 +11,11 @@
 <script>
   export default {
     props: {
-      type: {
+      type:   {
         type:    String,
         default: 'boring',
       },
-      active:   {
+      active: {
         type:    Boolean,
         default: false,
       },
@@ -24,26 +24,27 @@
     data () {
       return {
         burgerTypeClass: null,
-        isActive: null
+        isActive:        null,
       }
     },
 
-    created: function(){
-      this.burgerTypeClass = `hamburger--${this.type}`;
-      this.isActive = this.active;
+    created: function () {
+      this.burgerTypeClass = `hamburger--${this.type}`
+      this.isActive = this.active
     },
 
     methods: {
-      toggle(e){
-        this.isActive = !this.isActive;
-      }
-    }
+      toggle (e) {
+        this.isActive = !this.isActive
+        this.$emit('toggle', this.isActive)
+      },
+    },
   }
 </script>
 
 <style scoped>
     .hamburger {
-        padding: 15px 15px;
+        padding: 10px;
         display: inline-block;
         cursor: pointer;
         transition-property: opacity, filter;
@@ -58,14 +59,16 @@
         overflow: visible;
     }
 
-    .hamburger:hover {
+    .hamburger:hover,
+    .hamburger:focus {
         opacity: 0.7;
+        outline: none;
     }
 
     .hamburger-box {
         width: 40px;
         height: 24px;
-        display: inline-block;
+        display: block;
         position: relative;
     }
 
