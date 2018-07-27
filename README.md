@@ -2,6 +2,10 @@
 
 > An easy to use hamburger buttons library for VueJS. Inspired by [AMBURGERS](https://jonsuh.com/hamburgers/)
 
+## Documentation and Demo
+
+- [Library Documentation](https://imfaber.github.io/vue-tasty-burgers/dist/)
+
 ## Build Setup
 
 ``` bash
