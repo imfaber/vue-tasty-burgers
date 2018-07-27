@@ -1,6 +1,6 @@
 # vue-tasty-burgers
 
-> An easy to use hamburger buttons library for VueJS
+> An easy to use hamburger buttons library for VueJS. Inspired by [AMBURGERS](https://jonsuh.com/hamburgers/)
 
 ## Build Setup
 
@@ -41,3 +41,6 @@ As [package.json](package.json) is shared by both library and document app, thei
 ## License
 
 [MIT](LICENSE).
+This project is licensed under the [MIT](LICENSE) License.
+
+
