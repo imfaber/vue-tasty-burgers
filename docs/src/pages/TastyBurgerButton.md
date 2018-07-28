@@ -24,14 +24,16 @@ export default {
 ### Props
 
 Name                 | Type       | Default      | Required | Description
----------------------|------------|--------------|----------|-------------------------------------------------
+:---------------------|:------------|:--------------|:----------|:-------------------------------------------------
 `type`               | String     | boring       | false    | The type of burger button
 `active`             | Boolean    | false        | false    | Determines if the button is in the active state
+`color`             | String     | #00000       | false    | The color of the button in its default state
+`activeColor`        | String     | #00000       | false    | The color of the button in its active state
 
 #### Available burgers
 
 Type            | Usage example                              | Demo       
-----------------|--------------------------------------------|:--------------------------------------------------:
+:----------------|:--------------------------------------------|:--------------------------------------------------:
 `3dx`           | `<tasty-burger-button type="3dx" />`       | <tasty-burger-button type="3dx" />
 `3dy`           | `<tasty-burger-button type="3dy" />`       | <tasty-burger-button type="3dy" />
 `3dxy`          | `<tasty-burger-button type="3dxy" />`      | <tasty-burger-button type="3dxy" />
@@ -54,7 +56,7 @@ Type            | Usage example                              | Demo
 Note: You can reverse the animation by adding `-r` as type suffix.
 
 Type            | Usage example                            | Demo       
-----------------|------------------------------------------|:-----------------------------------------:
+:----------------|:------------------------------------------|:-----------------------------------------:
 `spin`          | `<tasty-burger-button type="spin" />`    | <tasty-burger-button type="spin" />
 `spin-r`        | `<tasty-burger-button type="spin-r" />`  | <tasty-burger-button type="spin-r" />
 
@@ -62,7 +64,7 @@ Type            | Usage example                            | Demo
 ### Events
 
 Name                 | Params      | Description
----------------------|-------------|------------------------------------------------
+:---------------------|:-------------|:------------------------------------------------
 `toggle`             | active      | Fired after the button is clicked and its active state changed
 
 

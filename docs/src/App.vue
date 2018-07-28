@@ -29,4 +29,8 @@ export default {
   .markdown-section table {
     display: table;
   }
+
+  .hamburger {
+    padding: 10px;
+  }
 </style>
