@@ -2,7 +2,7 @@
     <button type="button" class="hamburger"
             :class="[isActive ? 'is-active' : '', burgerTypeClass]"
             @click.prevent="toggle">
-        <span class="hamburger-box">
+        <span class="hamburger-box" :style="buttonStyle">
           <span class="hamburger-inner" :style="layerStyle">
               <span class="hamburger-inner__before" :style="layerStyle"></span>
               <span class="hamburger-inner__after" :style="layerStyle"></span>
@@ -15,21 +15,28 @@
 
   export default {
     props: {
-      type:   {
+      type:        {
         type:    String,
         default: 'boring',
       },
-      active: {
+      active:      {
         type:    Boolean,
         default: false,
       },
-      color:  {
+      color:       {
         type:    String,
         default: '#000000',
       },
-      activeColor:  {
+      activeColor: {
         type:    String,
         default: '#000000',
+      },
+      size:        {
+        type:      String,
+        validator: function (value) {
+          return ['xs', 's', 'm', 'l', 'xl'].indexOf(value) !== -1
+        },
+        default:   'm',
       },
     },
 
@@ -43,14 +50,52 @@
     created: function () {
       this.burgerTypeClass = `hamburger--${this.type}`
       this.isActive = this.active
+
+      switch (this.size) {
+        case 'xs':
+          this.buttonStyle = {
+            transform: 'scale(0.5)',
+            width:     '20px',
+            height:    '13px',
+          }
+          break;
+        case 's':
+          this.buttonStyle = {
+            transform: 'scale(0.7)',
+            width:     '29px',
+            height:    '18px',
+          }
+          break;
+        case 'm':
+          this.buttonStyle = {
+            transform: 'scale(0.9)',
+            width:     '36px',
+            height:    '23px',
+          }
+          break;
+        case 'l':
+          this.buttonStyle = {
+            transform: 'scale(1.1)',
+            width:       '44px',
+            height:      '27px',
+          }
+          break;
+        case 'xl':
+          this.buttonStyle = {
+            transform: 'scale(1.3)',
+            width:       '52px',
+            height:      '32px',
+          }
+          break;
+      }
     },
 
     computed: {
-      layerStyle: function() {
-        return  {
-          'background-color': (this.isActive) ? this.activeColor : this.color
-        };
-      }
+      layerStyle: function () {
+        return {
+          'background-color': (this.isActive) ? this.activeColor : this.color,
+        }
+      },
     },
 
     methods: {
@@ -90,6 +135,7 @@
         height: 24px;
         display: block;
         position: relative;
+        transform-origin: top left;
     }
 
     .hamburger-inner {
