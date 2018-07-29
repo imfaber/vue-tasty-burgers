@@ -44,7 +44,6 @@ As [package.json](package.json) is shared by both library and document app, thei
 
 ## License
 
-[MIT](LICENSE).
 This project is licensed under the [MIT](LICENSE) License.
 
 
