@@ -1,7 +1,7 @@
 <template>
   <aside class="sidebar">
     <h1>
-      <a class="app-name-link" data-nosearch="" href="/">Guide</a>
+      <a class="app-name-link" data-nosearch="" href="/">Vue Tasty Burgers</a>
     </h1>
     <div class="sidebar-nav">
       <ul>
@@ -25,18 +25,14 @@ export default {
     return {
       sections: [
         {
-          title: 'Getting started',
+          // title: 'Getting started',
           pages: [
             { to: 'quick-start', title: 'Quick start' },
-            { to: 'install-for-dev', title: 'Install for development' }
+            { to: 'install-for-dev', title: 'Install for development' },
+            { to: 'tasty-burger-button', title: 'How to use it' },
+            { to: 'available-burgers', title: 'Available burger buttons' },
           ]
         },
-        {
-          title: 'Components',
-          pages: [
-            { to: '/tasty-burger-button', title: 'Tasty burger button' }
-          ]
-        }
       ]
     }
   },
