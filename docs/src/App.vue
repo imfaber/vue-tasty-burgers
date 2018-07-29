@@ -7,17 +7,20 @@
         <app-footer />
       </article>
     </section>
+    <app-github-link />
   </main>
 </template>
 
 <script>
 import SideBar from './components/SideBar.vue'
 import Footer from './components/Footer.vue'
+import GithubLink from './components/GithubLink.vue'
 
 export default {
   components: {
     'app-sidebar': SideBar,
     'app-footer': Footer,
+    'app-github-link': GithubLink,
   }
 }
 </script>
@@ -26,6 +29,11 @@ export default {
   body{
     overflow-y: auto !important;
   }
+
+  .content {
+    padding-top: 20px;
+  }
+
   .markdown-section table {
     display: table;
   }

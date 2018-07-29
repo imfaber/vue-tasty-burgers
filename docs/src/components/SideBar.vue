@@ -38,3 +38,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  .sidebar>h1 {
+    text-align: left;
+    font-weight: bold;
+    color: #42b983;
+    margin: 15px 0 20px 30px;
+  }
+</style>
