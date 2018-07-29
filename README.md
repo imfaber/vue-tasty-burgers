@@ -20,12 +20,9 @@ npm run start
 
 # build for production with minification
 npm run build
-
-# run unit tests
-npm run unit
 ```
 
-## How it Works
+## How this project works
 
 The project makes use of both [Rollup](https://rollupjs.org/) and [WebPack 2](https://webpack.github.io/). Although they are two different bundlers and producting separate ouputs, they can coexist in the same project, sharing the following:
 
