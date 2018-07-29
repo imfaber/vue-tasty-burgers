@@ -29,7 +29,7 @@
       },
       activeColor: {
         type:    String,
-        default: '#000000',
+        default: null,
       },
       size:        {
         type:      String,
@@ -50,6 +50,7 @@
     created: function () {
       this.burgerTypeClass = `hamburger--${this.type}`
       this.isActive = this.active
+      this.activeColor = this.activeColor || this.color;
 
       switch (this.size) {
         case 'xs':
