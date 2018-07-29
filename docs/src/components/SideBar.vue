@@ -1,7 +1,10 @@
 <template>
   <aside class="sidebar">
     <h1>
-      <a class="app-name-link" data-nosearch="" href="/">Vue Tasty Burgers</a>
+      <a href=""></a>
+      <router-link to="index">
+        <a class="app-name-link" data-nosearch="">Vue Tasty Burgers</a>
+      </router-link>
     </h1>
     <div class="sidebar-nav">
       <ul>
