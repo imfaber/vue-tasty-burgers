@@ -3,7 +3,7 @@
 > An easy to use hamburger buttons library for VueJS. 
 Inspired by [AMBURGERS](https://jonsuh.com/hamburgers/)
 
-![Basic Screenshot](README/vtb_demo.gif)
+![Basic Screenshot](https://raw.githubusercontent.com/imfaber/vue-tasty-burgers/master/README/vtb_demo.gif)
 
 ## Documentation and Live demo
 
