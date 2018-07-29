@@ -1,6 +1,4 @@
-# Vue Tasty Burger Button
-
-A simple, customizable and accessible hamburger button component.
+# How to use the component
 
 ### Example
 
