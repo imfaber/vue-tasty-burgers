@@ -50,7 +50,7 @@
     created: function () {
       this.burgerTypeClass = `hamburger--${this.type}`
       this.isActive = this.active
-      this.activeColor = this.activeColor || this.color;
+      this._activeColor = this.activeColor || this.color;
 
       switch (this.size) {
         case 'xs':
@@ -94,7 +94,7 @@
     computed: {
       layerStyle: function () {
         return {
-          'background-color': (this.isActive) ? this.activeColor : this.color,
+          'background-color': (this.isActive) ? this._activeColor : this.color,
         }
       },
     },
