@@ -131,12 +131,16 @@ export default {
         outline: none;
     }
 
+    .hamburger::-moz-focus-inner {
+        border: 0;
+    }
+
     .hamburger-box {
         width: 40px;
         height: 24px;
         display: block;
         position: relative;
-        transform-origin: top left;
+        transform-origin: center left;
     }
 
     .hamburger-inner {
