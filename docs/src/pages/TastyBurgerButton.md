@@ -9,7 +9,8 @@
         :active="isActive" 
         :size="size" 
         :color="color" 
-        :active-color="activeColor" />
+        :active-color="activeColor"
+        v-on:toggle="onToggle" />
 </template>
 <script>
 export default {
@@ -20,6 +21,11 @@ export default {
       size: 'xl',
       color: 'green',
       activeColor: 'orange'
+    }
+  },
+  methods: {
+    onToggle(active) {
+      // Toggle menu
     }
   }
 }
