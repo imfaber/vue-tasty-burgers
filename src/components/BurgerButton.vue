@@ -107,8 +107,11 @@
     },
 
     watch: {
-      active (value) {
-        this.isActive = value
+      active (newValue, oldValue) {
+        if (newValue !== oldValue) {
+          this.isActive = value
+          this.$emit('toggle', newValue)
+        }
       },
     },
   }
