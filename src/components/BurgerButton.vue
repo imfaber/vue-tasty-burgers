@@ -109,7 +109,7 @@ export default {
   watch: {
     active (newValue, oldValue) {
       if (newValue !== oldValue) {
-        this.isActive = value
+        this.isActive = newValue
         this.$emit('toggle', newValue)
       }
     },
