@@ -43,8 +43,8 @@ Results in:
 </template>
 
 <script>
-import {TastyBurgerButton} from 'vue-tasty-burgers';
-import 'vue-tasty-burgers/dist/vue-tasty-burgers.css';
+import {TastyBurgerButton} from 'vue-tasty-burgers'
+import 'vue-tasty-burgers/dist/vue-tasty-burgers.css'
 
 export default {
   components: {

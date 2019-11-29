@@ -20,7 +20,7 @@ export default {
   components: {
     'app-sidebar': SideBar,
     'app-footer': Footer,
-    'app-github-link': GithubLink,
+    'app-github-link': GithubLink
   }
 }
 </script>

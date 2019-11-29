@@ -13,99 +13,99 @@
 
 <script>
 
-  export default {
-    props: {
-      type:        {
-        type:    String,
-        default: 'boring',
-      },
-      active:      {
-        type:    Boolean,
-        default: false,
-      },
-      color:       {
-        type:    String,
-        default: '#000000',
-      },
-      activeColor: {
-        type:    String,
-        default: null,
-      },
-      size:        {
-        type:      String,
-        validator: function (value) {
-          return ['xs', 's', 'm', 'l', 'xl'].indexOf(value) !== -1
-        },
-        default:   'm',
-      },
+export default {
+  props: {
+    type: {
+      type: String,
+      default: 'boring'
     },
-
-    data () {
-      return {
-        burgerTypeClass: null,
-        isActive:        null,
-      }
+    active: {
+      type: Boolean,
+      default: false
     },
-
-    created: function () {
-      this.burgerTypeClass = `hamburger--${this.type}`
-      this.isActive = this.active
-      this._activeColor = this.activeColor || this.color;
-
-      switch (this.size) {
-        case 'xs':
-          this.buttonStyle = {
-            transform: 'scale(0.5)',
-            width:     '20px',
-            height:    '13px',
-          }
-          break;
-        case 's':
-          this.buttonStyle = {
-            transform: 'scale(0.7)',
-            width:     '29px',
-            height:    '18px',
-          }
-          break;
-        case 'm':
-          this.buttonStyle = {
-            transform: 'scale(0.9)',
-            width:     '36px',
-            height:    '23px',
-          }
-          break;
-        case 'l':
-          this.buttonStyle = {
-            transform: 'scale(1.1)',
-            width:       '44px',
-            height:      '27px',
-          }
-          break;
-        case 'xl':
-          this.buttonStyle = {
-            transform: 'scale(1.3)',
-            width:       '52px',
-            height:      '32px',
-          }
-          break;
-      }
+    color: {
+      type: String,
+      default: '#000000'
     },
+    activeColor: {
+      type: String,
+      default: null
+    },
+    size: {
+      type: String,
+      validator: function (value) {
+        return ['xs', 's', 'm', 'l', 'xl'].indexOf(value) !== -1
+      },
+      default: 'm'
+    }
+  },
 
-    computed: {
-      layerStyle: function () {
-        return {
-          'background-color': (this.isActive) ? this._activeColor : this.color,
+  data () {
+    return {
+      burgerTypeClass: null,
+      isActive: null
+    }
+  },
+
+  created: function () {
+    this.burgerTypeClass = `hamburger--${this.type}`
+    this.isActive = this.active
+    this._activeColor = this.activeColor || this.color
+
+    switch (this.size) {
+      case 'xs':
+        this.buttonStyle = {
+          transform: 'scale(0.5)',
+          width: '20px',
+          height: '13px'
         }
-      },
-    },
+        break
+      case 's':
+        this.buttonStyle = {
+          transform: 'scale(0.7)',
+          width: '29px',
+          height: '18px'
+        }
+        break
+      case 'm':
+        this.buttonStyle = {
+          transform: 'scale(0.9)',
+          width: '36px',
+          height: '23px'
+        }
+        break
+      case 'l':
+        this.buttonStyle = {
+          transform: 'scale(1.1)',
+          width: '44px',
+          height: '27px'
+        }
+        break
+      case 'xl':
+        this.buttonStyle = {
+          transform: 'scale(1.3)',
+          width: '52px',
+          height: '32px'
+        }
+        break
+    }
+  },
 
-    methods: {
-      toggle (e) {
-        this.isActive = !this.isActive
-        this.$emit('toggle', this.isActive)
-      },
-    },
+  computed: {
+    layerStyle: function () {
+      return {
+        'background-color': (this.isActive) ? this._activeColor : this.color
+      }
+    }
+  },
+
+  methods: {
+    toggle (e) {
+      this.isActive = !this.isActive
+      this.$emit('toggle', this.isActive)
+    }
   }
+}
 </script>
 
 <style>

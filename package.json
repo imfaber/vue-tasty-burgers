@@ -14,7 +14,7 @@
     "vue": "^2.5.11"
   },
   "scripts": {
-    "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "lint": "eslint --ext .js,.vue src test/unit/specs --fix",
     "lint-docs-vue": "eslint --plugin vue --ext .js,.vue docs/src --fix",
     "lint-docs-md-tag": "eslint --plugin script-tags --ext .js,.vue,.md docs/src --rule 'eol-last':0 --fix",
     "lint-docs": "npm run lint-docs-vue && npm run lint-docs-md-tag",

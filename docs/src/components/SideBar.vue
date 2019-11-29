@@ -33,12 +33,12 @@ export default {
             { to: 'quick-start', title: 'Quick start' },
             { to: 'install-for-dev', title: 'Install for development' },
             { to: 'tasty-burger-button', title: 'How to use it' },
-            { to: 'available-burgers', title: 'Available burger buttons' },
+            { to: 'available-burgers', title: 'Available burger buttons' }
           ]
-        },
+        }
       ]
     }
-  },
+  }
 }
 </script>
 
