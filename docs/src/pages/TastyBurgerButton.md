@@ -12,6 +12,7 @@
         :active-color="activeColor"
         v-on:toggle="onToggle" />
 </template>
+
 <script>
 export default {
   data () {
@@ -30,7 +31,6 @@ export default {
   }
 }
 </script>
-<!-- component-demo.vue -->
 ````
 
 ### Props
