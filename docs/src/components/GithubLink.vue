@@ -13,6 +13,6 @@ export default {
       link: 'https://github.com/imfaber/vue-tasty-burgers',
       label: 'View source on Github'
     }
-  },
+  }
 }
 </script>
