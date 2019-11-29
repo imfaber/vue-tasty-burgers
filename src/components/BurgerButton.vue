@@ -105,6 +105,12 @@
         this.$emit('toggle', this.isActive)
       },
     },
+
+    watch: {
+      active (value) {
+        this.isActive = value
+      },
+    },
   }
 </script>
 
