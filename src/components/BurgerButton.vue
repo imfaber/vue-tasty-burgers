@@ -112,8 +112,8 @@ export default {
         this.isActive = newValue
         this.$emit('toggle', newValue)
       }
-    },
-  },
+    }
+  }
 }
 </script>
 
