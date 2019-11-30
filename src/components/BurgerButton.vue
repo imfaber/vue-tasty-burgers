@@ -104,7 +104,16 @@ export default {
       this.isActive = !this.isActive
       this.$emit('toggle', this.isActive)
     }
-  }
+  },
+
+  watch: {
+    active (newValue, oldValue) {
+      if (newValue !== oldValue) {
+        this.isActive = newValue
+        this.$emit('toggle', newValue)
+      }
+    },
+  },
 }
 </script>
 
