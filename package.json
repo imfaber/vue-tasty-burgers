@@ -1,6 +1,6 @@
 {
   "name": "vue-tasty-burgers",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "An easy to use hamburger buttons library for VueJS",
   "author": "Fabrizio Meinero <fabrizio@imfaber.me>",
   "keywords": [
