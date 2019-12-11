@@ -21,7 +21,8 @@
     "build": "cross-env NODE_ENV=production rollup -c",
     "dev": "rollup -c -w",
     "unit": "cross-env NODE_ENV=test jest --config test/unit/jest.conf.js",
-    "test": "npm run unit",
+    "_unit": "echo Tests not configured",
+    "test": "npm run _unit",
     "start": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build-docs": "npm run clean-docs && cross-env NODE_ENV=production webpack --progress --hide-modules",
     "clean-docs": "rimraf docs/dist"
