@@ -1,8 +1,8 @@
-import BoringHamburger from './BoringHumburger.vue'
+import BoringHamburger from './BoringHamburger.vue'
 
 export default { title: 'BoringHamburger' }
 
-export const asAComponent = () => ({
-  components: { BoringHamburger },
-  template: '<boring-hamburger />'
+export const Default = () => ({
+    components: { BoringHamburger },
+    template: '<boring-hamburger />'
 })
