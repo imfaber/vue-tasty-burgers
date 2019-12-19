@@ -3,17 +3,17 @@
 </template>
 
 <script>
-import PlainHamburger from "./PlainHamburger";
+import PlainHamburger from './PlainHamburger'
 
 export default {
-  name: "BoringHamburger",
+  name: 'BoringHamburger',
   components: {
     PlainHamburger
   }
-};
+}
 </script>
 
-<style scoped>
+<style>
 .hamburger--boring .hamburger-inner,
 .hamburger--boring .hamburger-inner__before,
 .hamburger--boring .hamburger-inner__after {

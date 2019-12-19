@@ -1,5 +1,10 @@
 <template>
-  <button type="button" class="hamburger" :class="{'is-active' : isActive}" @click.prevent="toggle">
+  <button
+    type="button"
+    class="hamburger"
+    :class="{ 'is-active': isActive }"
+    @click.prevent="toggle"
+  >
     <span class="hamburger-box">
       <span class="hamburger-inner">
         <span class="hamburger-inner__before" />
@@ -16,11 +21,30 @@ export default {
       type: Boolean,
       default: false
     }
+  },
+  data () {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    toggle (e) {
+      this.isActive = !this.isActive
+      this.$emit('toggle', this.isActive)
+    }
+  },
+  watch: {
+    active (newValue, oldValue) {
+      if (newValue !== oldValue) {
+        this.isActive = newValue
+        this.$emit('toggle', newValue)
+      }
+    }
   }
-};
+}
 </script>
 
-<style scoped>
+<style>
 .hamburger {
   padding: 0;
   display: inline-block;

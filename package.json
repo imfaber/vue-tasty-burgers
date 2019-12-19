@@ -24,9 +24,11 @@
     "test": "npm run unit",
     "start": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build-docs": "npm run clean-docs && cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "clean-docs": "rimraf docs/dist"
+    "clean-docs": "rimraf docs/dist",
+    "storybook": "start-storybook --port 6006"
   },
   "devDependencies": {
+    "@storybook/vue": "^5.2.8",
     "@vue/test-utils": "^1.0.0-beta.16",
     "autoprefixer": "^8.5.0",
     "babel-core": "^6.22.1",
