@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import PlainHamburger from "./PlainHamburger";
+import PlainHamburger from './PlainHamburger'
 
 export default {
-  name: "SliderHamburger",
+  name: 'SliderHamburger',
   components: {
     PlainHamburger
   }
-};
+}
 </script>
 
 <style>
