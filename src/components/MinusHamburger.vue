@@ -1,16 +1,16 @@
 <template>
-  <plain-hamburger class="hamburger--minus" @toggle="$emit('toggle')" />
+  <plain-hamburger class="hamburger--minus" v-on="$listaners" />
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger'
+import PlainHamburger from './PlainHamburger';
 
 export default {
   name: 'MinusHamburger',
   components: {
-    PlainHamburger
-  }
-}
+    PlainHamburger,
+  },
+};
 </script>
 
 <style>

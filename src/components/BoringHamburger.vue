@@ -1,16 +1,16 @@
 <template>
-  <plain-hamburger class="hamburger--boring" @toggle="$emit('toggle')" />
+  <plain-hamburger class="hamburger--boring" v-on="$listeners"/>
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger'
+import PlainHamburger from './PlainHamburger';
 
 export default {
   name: 'BoringHamburger',
   components: {
-    PlainHamburger
-  }
-}
+    PlainHamburger,
+  },
+};
 </script>
 
 <style>
