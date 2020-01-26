@@ -1,13 +1,13 @@
-import ArrowAltHamburger from './ArrowAltHamburger.vue';
+import ArrowAltHamburger from './ArrowAltHamburger.vue'
 
-export default { title: 'ArrowAltHamburger' };
+export default { title: 'ArrowAltHamburger' }
 
 export const Default = () => ({
   components: { ArrowAltHamburger },
-  template: '<arrow-alt-hamburger />',
-});
+  template: '<arrow-alt-hamburger />'
+})
 
 export const Reversed = () => ({
   components: { ArrowAltHamburger },
-  template: '<arrow-alt-hamburger reversed/>',
-});
+  template: '<arrow-alt-hamburger reversed/>'
+})

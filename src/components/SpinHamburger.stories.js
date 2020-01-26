@@ -1,13 +1,13 @@
-import SpinHamburger from './SpinHamburger.vue';
+import SpinHamburger from './SpinHamburger.vue'
 
-export default { title: 'SpinHamburger' };
+export default { title: 'SpinHamburger' }
 
 export const Default = () => ({
   components: { SpinHamburger },
-  template: '<spin-hamburger />',
-});
+  template: '<spin-hamburger />'
+})
 
 export const Reversed = () => ({
   components: { SpinHamburger },
-  template: '<spin-hamburger reversed/>',
-});
+  template: '<spin-hamburger reversed/>'
+})

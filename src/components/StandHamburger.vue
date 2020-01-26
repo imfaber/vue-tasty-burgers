@@ -3,20 +3,20 @@
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger';
+import PlainHamburger from './PlainHamburger'
 
 export default {
   name: 'StandHamburger',
   components: {
-    PlainHamburger,
+    PlainHamburger
   },
   props: {
     reversed: {
       type: Boolean,
-      default: () => false,
-    },
-  },
-};
+      default: () => false
+    }
+  }
+}
 </script>
 
 <style>

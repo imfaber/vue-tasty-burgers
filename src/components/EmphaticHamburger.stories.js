@@ -1,13 +1,13 @@
-import EmphaticHamburger from './EmphaticHamburger.vue';
+import EmphaticHamburger from './EmphaticHamburger.vue'
 
-export default { title: 'EmphaticHamburger' };
+export default { title: 'EmphaticHamburger' }
 
 export const Default = () => ({
   components: { EmphaticHamburger },
-  template: '<emphatic-hamburger />',
-});
+  template: '<emphatic-hamburger />'
+})
 
 export const Reversed = () => ({
   components: { EmphaticHamburger },
-  template: '<emphatic-hamburger reversed/>',
-});
+  template: '<emphatic-hamburger reversed/>'
+})

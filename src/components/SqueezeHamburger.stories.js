@@ -1,8 +1,8 @@
-import SqueezeHamburger from './SqueezeHamburger.vue';
+import SqueezeHamburger from './SqueezeHamburger.vue'
 
-export default { title: 'SqueezeHamburger' };
+export default { title: 'SqueezeHamburger' }
 
 export const Default = () => ({
   components: { SqueezeHamburger },
-  template: '<squeeze-hamburger />',
-});
+  template: '<squeeze-hamburger />'
+})

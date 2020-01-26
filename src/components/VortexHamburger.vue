@@ -4,21 +4,21 @@
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger';
+import PlainHamburger from './PlainHamburger'
 
 // TODO: Control the speed of animation by props
 export default {
   name: 'VortexHamburger',
   components: {
-    PlainHamburger,
+    PlainHamburger
   },
   props: {
     reversed: {
       type: Boolean,
-      default: () => false,
-    },
-  },
-};
+      default: () => false
+    }
+  }
+}
 </script>
 
 <style>
