@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 // Update this for additional vendor libraries
-const VENDOR_LIBS = ['vue']; 
+const VENDOR_LIBS = ['vue'];
 
 module.exports = {
   entry: {
@@ -66,6 +66,7 @@ module.exports = {
     ]
   },
   resolve: {
+    extensions: ['*', '.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       'my-lib': path.resolve('src')
