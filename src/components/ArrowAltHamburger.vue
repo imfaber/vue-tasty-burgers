@@ -1,17 +1,21 @@
 
 <template>
-  <plain-hamburger v-if="reversed" class="hamburger--arrowalt-r" v-on="$listeners"/>
-  <plain-hamburger v-else class="hamburger--arrowalt" v-on="$listeners"/>
+  <plain-hamburger :class="className" v-on="$listeners"/>
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger'
+import PlainHamburger from './PlainHamburger.vue'
 
 // TODO: Control the speed of animation by props
 export default {
   name: 'ArrowAltHamburger',
   components: {
     PlainHamburger
+  },
+  data () {
+    return {
+      className: `hamburger--arrowalt${this.reversed ? '-r' : ''}`
+    }
   },
   props: {
     reversed: {

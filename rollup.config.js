@@ -1,9 +1,9 @@
 import vue from 'rollup-plugin-vue';
 import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
-import replace from 'rollup-plugin-replace';
-import uglify from 'rollup-plugin-uglify';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import replace from '@rollup/plugin-replace';
+import { terser } from "rollup-plugin-terser";
 import { minify } from 'uglify-es';
 import pkg from './package.json';
 
@@ -14,8 +14,9 @@ export default {
   output: {
     file: `dist/${LIB_NAME}.js`,
     format: 'es',
-    sourcemap: true
+    sourcemap: false
   },
+  inlineDynamicImports: true,
   plugins: [
     resolve({
       jsnext: true,
@@ -28,11 +29,12 @@ export default {
       css: `dist/${LIB_NAME}.css`
     }),
     babel({
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
+      runtimeHelpers: true
     }),
     replace({
       ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
-    (process.env.NODE_ENV === 'production' && uglify({}, minify))
+    (process.env.NODE_ENV === 'production' && terser({}, minify))
   ],
 };

@@ -16,14 +16,22 @@ module.exports = {
     filename: '[name].[hash].js'
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ['vendor', 'manifest']
-    }),
     new HtmlWebpackPlugin({
       template: 'docs/src/index.html'
     }),
     new VueLoaderPlugin()
   ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all"
+        }
+      }
+    },
+  },
   module: {
     rules: [
       {

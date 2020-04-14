@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger'
+import PlainHamburger from './PlainHamburger.vue'
 
 // TODO: Control the speed of animation by props
 export default {

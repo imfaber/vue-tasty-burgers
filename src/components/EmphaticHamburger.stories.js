@@ -9,5 +9,5 @@ export const Default = () => ({
 
 export const Reversed = () => ({
   components: { EmphaticHamburger },
-  template: '<emphatic-hamburger reversed/>'
+  template: '<emphatic-hamburger reversed />'
 })

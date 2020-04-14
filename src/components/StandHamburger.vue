@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger'
+import PlainHamburger from './PlainHamburger.vue'
 
 export default {
   name: 'StandHamburger',

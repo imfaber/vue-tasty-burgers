@@ -1,9 +1,9 @@
 <template>
-  <plain-hamburger class="hamburger--minus" v-on="$listaners" />
+  <plain-hamburger class="hamburger--minus" v-on="$listeners" />
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger'
+import PlainHamburger from './PlainHamburger.vue'
 
 export default {
   name: 'MinusHamburger',
