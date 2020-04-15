@@ -4,7 +4,7 @@
 Here the full list of available buttons.
 
 
-Type            | Usage example                              | Demo       
+Type            | Usage example                              | Demo
 :----------------|:--------------------------------------------|:--------------------------------------------------:
 `3dx`           | `<tasty-burger-button type="3dx" />`       | <tasty-burger-button type="3dx" />
 `3dy`           | `<tasty-burger-button type="3dy" />`       | <tasty-burger-button type="3dy" />
@@ -22,21 +22,3 @@ Type            | Usage example                              | Demo
 `stand`           | `<tasty-burger-button type="stand" />`    | <tasty-burger-button type="stand" />
 `squeeze`           | `<tasty-burger-button type="squeeze" />`    | <tasty-burger-button type="squeeze" />
 `vortex`           | `<tasty-burger-button type="vortex" />`    | <tasty-burger-button type="vortex" />
-
-
-### Note
-You can reverse the animation by adding `-r` as type suffix.
-
-Type            | Usage example                            | Demo       
-:----------------|:------------------------------------------|:-----------------------------------------:
-`spin`          | `<tasty-burger-button type="spin" />`    | <tasty-burger-button type="spin" />
-`spin-r`        | `<tasty-burger-button type="spin-r" />`  | <tasty-burger-button type="spin-r" />
-
-
-
-
-
-
-
-
-
