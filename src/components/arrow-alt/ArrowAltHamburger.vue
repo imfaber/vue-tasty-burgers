@@ -1,28 +1,15 @@
-
 <template>
-  <plain-hamburger :class="className" v-on="$listeners"/>
+  <PlainHamburger v-on="$listeners" v-bind="$props"/>
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger.vue'
+import PlainHamburger from '../PlainHamburger.vue'
+import PropsMixins from '../../mixins/props-mixin.js'
 
-// TODO: Control the speed of animation by props
 export default {
   name: 'ArrowAltHamburger',
-  components: {
-    PlainHamburger
-  },
-  data () {
-    return {
-      className: `hamburger--arrowalt${this.reversed ? '-r' : ''}`
-    }
-  },
-  props: {
-    reversed: {
-      type: Boolean,
-      default: () => false
-    }
-  }
+  components: { PlainHamburger },
+  mixins: [PropsMixins]
 }
 </script>
 
@@ -48,8 +35,8 @@ export default {
     transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 /*
-       * Arrow Alt Right
-       */
+* Arrow Alt Right
+*/
 .hamburger--arrowalt-r .hamburger-inner__before {
   transition: top 0.1s 0.1s ease,
     transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);

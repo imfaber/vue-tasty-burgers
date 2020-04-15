@@ -1,15 +1,14 @@
 <template>
-  <plain-hamburger class="hamburger--squeeze" v-on="$listeners"/>
+  <PlainHamburger v-on="$listeners" v-bind="$props"/>
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger.vue'
+import PlainHamburger from '../PlainHamburger.vue'
+import PropsMixins from '../../mixins/props-mixin.js'
 
 export default {
-  name: 'SqueezeHamburger',
-  components: {
-    PlainHamburger
-  }
+  components: { PlainHamburger },
+  mixins: [PropsMixins]
 }
 </script>
 

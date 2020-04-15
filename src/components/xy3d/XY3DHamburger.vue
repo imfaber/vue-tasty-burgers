@@ -1,24 +1,15 @@
-
 <template>
-  <plain-hamburger v-if="reversed" class="hamburger--3dxy-r" v-on="$listeners"/>
-  <plain-hamburger v-else class="hamburger--3dxy" v-on="$listeners"/>
+  <PlainHamburger v-on="$listeners" v-bind="$props"/>
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger.vue'
+import PlainHamburger from '../PlainHamburger.vue'
+import PropsMixins from '../../mixins/props-mixin.js'
 
-// TODO: Control the speed of animation by props
 export default {
-  name: 'XY3DHamburger',
-  components: {
-    PlainHamburger
-  },
-  props: {
-    reversed: {
-      type: Boolean,
-      default: () => false
-    }
-  }
+  name: 'ArrowAltHamburger',
+  components: { PlainHamburger },
+  mixins: [PropsMixins]
 }
 </script>
 

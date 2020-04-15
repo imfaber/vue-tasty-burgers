@@ -2,29 +2,28 @@
   <button
     type="button"
     class="hamburger"
-    :class="{ 'is-active': isActive }"
+    :class="[hamburgerModifierClass, { 'is-active': isActive }]"
     @click.prevent="toggle"
   >
-    <span class="hamburger-box">
-      <span class="hamburger-inner">
-        <span class="hamburger-inner__before" />
-        <span class="hamburger-inner__after" />
+    <span class="hamburger-box" :style="buttonStyle">
+      <span class="hamburger-inner" :style="layerStyle">
+        <span class="hamburger-inner__before" :style="layerStyle" />
+        <span class="hamburger-inner__after" :style="layerStyle" />
       </span>
     </span>
   </button>
 </template>
 
 <script>
+import PropsMixins from '../mixins/props-mixin.js'
+
 export default {
-  props: {
-    active: {
-      type: Boolean,
-      default: false
-    }
-  },
+  mixins: [PropsMixins],
+
   data () {
     return {
-      isActive: false
+      isActive: false,
+      buttonStyle: null
     }
   },
   methods: {
@@ -40,7 +39,62 @@ export default {
         this.$emit('toggle', newValue)
       }
     }
+  },
+  computed: {
+    layerStyle: function () {
+      return {
+        'background-color': this.isActive ? this._activeColor : this.color
+      }
+    },
+    hamburgerModifierClass () {
+      return `hamburger--${this.type}${this.reversed ? '-r' : ''}`
+        // prevent double '-r-r' if both type suffix and 'reversed' prop are used
+        .replace(/-r-r$/, '-r')
+    }
+  },
+  created: function () {
+    this.isActive = this.active
+    this._activeColor = this.activeColor || this.color
+
+    switch (this.size) {
+      case 'xs':
+        this.buttonStyle = {
+          transform: 'scale(0.5)',
+          width: '20px',
+          height: '13px'
+        }
+        break
+      case 's':
+        this.buttonStyle = {
+          transform: 'scale(0.7)',
+          width: '29px',
+          height: '18px'
+        }
+        break
+      case 'm':
+        this.buttonStyle = {
+          transform: 'scale(0.9)',
+          width: '36px',
+          height: '23px'
+        }
+        break
+      case 'l':
+        this.buttonStyle = {
+          transform: 'scale(1.1)',
+          width: '44px',
+          height: '27px'
+        }
+        break
+      case 'xl':
+        this.buttonStyle = {
+          transform: 'scale(1.3)',
+          width: '52px',
+          height: '32px'
+        }
+        break
+    }
   }
+
 }
 </script>
 

@@ -1,24 +1,16 @@
-<template><plain-hamburger v-if="reversed" class="hamburger--stand-r" v-on="$listeners"/>
-  <plain-hamburger v-else class="hamburger--stand" v-on="$listeners"/>
+<template>
+  <PlainHamburger v-on="$listeners" v-bind="$props"/>
 </template>
 
 <script>
-import PlainHamburger from './PlainHamburger.vue'
+import PlainHamburger from '../PlainHamburger.vue'
+import PropsMixins from '../../mixins/props-mixin.js'
 
 export default {
-  name: 'StandHamburger',
-  components: {
-    PlainHamburger
-  },
-  props: {
-    reversed: {
-      type: Boolean,
-      default: () => false
-    }
-  }
+  components: { PlainHamburger },
+  mixins: [PropsMixins]
 }
 </script>
-
 <style>
 .hamburger--stand .hamburger-inner {
   transition: transform 0.075s 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19),
