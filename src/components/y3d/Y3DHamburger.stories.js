@@ -1,13 +1,13 @@
-import Y3DHamburger from './Y3DHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'Y3DHamburger' }
 
 export const Default = () => ({
-  components: { Y3DHamburger },
-  template: '<y-3-d-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="3dy"/>'
 })
 
 export const Reversed = () => ({
-  components: { Y3DHamburger },
-  template: '<y-3-d-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="3dy" reversed/>'
 })

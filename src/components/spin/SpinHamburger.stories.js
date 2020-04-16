@@ -1,13 +1,13 @@
-import SpinHamburger from './SpinHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'SpinHamburger' }
 
 export const Default = () => ({
-  components: { SpinHamburger },
-  template: '<spin-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="spin"/>'
 })
 
 export const Reversed = () => ({
-  components: { SpinHamburger },
-  template: '<spin-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="spin" reversed/>'
 })

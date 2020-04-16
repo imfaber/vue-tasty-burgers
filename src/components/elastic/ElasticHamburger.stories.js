@@ -1,13 +1,13 @@
-import ElasticHamburger from './ElasticHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'ElasticHamburger' }
 
 export const Default = () => ({
-  components: { ElasticHamburger },
-  template: '<elastic-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type"elastic" />'
 })
 
 export const Reversed = () => ({
-  components: { ElasticHamburger },
-  template: '<elastic-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type"elastic" reversed/>'
 })

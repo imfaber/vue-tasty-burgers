@@ -1,13 +1,13 @@
-import VortexHamburger from './VortexHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'VortexHamburger' }
 
 export const Default = () => ({
-  components: { VortexHamburger },
-  template: '<vortex-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="vortex"/>'
 })
 
 export const Reversed = () => ({
-  components: { VortexHamburger },
-  template: '<vortex-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="vortex" reversed/>'
 })

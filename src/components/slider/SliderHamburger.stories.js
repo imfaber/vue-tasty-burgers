@@ -1,13 +1,13 @@
-import SliderHamburger from './SliderHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'SliderHamburger' }
 
 export const Default = () => ({
-  components: { SliderHamburger },
-  template: '<slider-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="slider"/>'
 })
 
 export const Reversed = () => ({
-  components: { SliderHamburger },
-  template: '<slider-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="slider" reversed/>'
 })

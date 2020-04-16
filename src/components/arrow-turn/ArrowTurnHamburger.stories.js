@@ -1,13 +1,13 @@
-import ArrowTurnHamburger from './ArrowTurnHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'ArrowTurnHamburger' }
 
 export const Default = () => ({
-  components: { ArrowTurnHamburger },
-  template: '<arrow-turn-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="arrowturn"/>'
 })
 
 export const Reversed = () => ({
-  components: { ArrowTurnHamburger },
-  template: '<arrow-turn-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="arrowturn" reversed/>'
 })

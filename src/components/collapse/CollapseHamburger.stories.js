@@ -1,13 +1,13 @@
-import CollapseHamburger from './CollapseHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'CollapseHamburger' }
 
 export const Default = () => ({
-  components: { CollapseHamburger },
-  template: '<collapse-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="collapse"/>'
 })
 
 export const Reversed = () => ({
-  components: { CollapseHamburger },
-  template: '<collapse-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="collapse" reversed/>'
 })

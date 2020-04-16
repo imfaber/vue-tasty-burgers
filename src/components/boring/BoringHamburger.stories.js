@@ -1,8 +1,8 @@
-import BoringHamburger from './BoringHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'BoringHamburger' }
 
 export const Default = () => ({
-  components: { BoringHamburger },
-  template: '<boring-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton/>'
 })

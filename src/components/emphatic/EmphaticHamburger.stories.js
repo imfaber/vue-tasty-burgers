@@ -1,13 +1,13 @@
-import EmphaticHamburger from './EmphaticHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'EmphaticHamburger' }
 
 export const Default = () => ({
-  components: { EmphaticHamburger },
-  template: '<emphatic-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="emphatic"/>'
 })
 
 export const Reversed = () => ({
-  components: { EmphaticHamburger },
-  template: '<emphatic-hamburger reversed />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="emphatic" reversed/>'
 })

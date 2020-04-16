@@ -1,13 +1,13 @@
-import StandHamburger from './StandHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'StandHamburger' }
 
 export const Default = () => ({
-  components: { StandHamburger },
-  template: '<stand-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="stand"/>'
 })
 
 export const Reversed = () => ({
-  components: { StandHamburger },
-  template: '<stand-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="stand" reversed/>'
 })

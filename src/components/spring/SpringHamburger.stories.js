@@ -1,13 +1,13 @@
-import SpringHamburger from './SpringHamburger.vue'
+import BurgerButton from '../BurgerButton.vue'
 
 export default { title: 'SpringHamburger' }
 
 export const Default = () => ({
-  components: { SpringHamburger },
-  template: '<spring-hamburger />'
+  components: { BurgerButton },
+  template: '<BurgerButton type="spring"/>'
 })
 
 export const Reversed = () => ({
-  components: { SpringHamburger },
-  template: '<spring-hamburger reversed/>'
+  components: { BurgerButton },
+  template: '<BurgerButton type="spring" reversed/>'
 })
