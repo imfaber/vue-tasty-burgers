@@ -4,7 +4,7 @@ function install (Vue, options) {
   Vue.component('TastyBurgerButton', TastyBurgerButton)
   let prefix = ''
 
-  if ('prefix' in options) {
+  if (options && 'prefix' in options) {
     prefix = options.prefix
     prefix = prefix.charAt(0).toUpperCase() + prefix.slice(1)
     prefix = prefix
