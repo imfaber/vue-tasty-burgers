@@ -9,6 +9,7 @@ Type            | Usage example                              | Demo
 `3dx`           | `<tasty-burger-button type="3dx" />`       | <tasty-burger-button type="3dx" />
 `3dy`           | `<tasty-burger-button type="3dy" />`       | <tasty-burger-button type="3dy" />
 `3dxy`          | `<tasty-burger-button type="3dxy" />`      | <tasty-burger-button type="3dxy" />
+`arrow`      | `<tasty-burger-button type="arrow" />`    | <tasty-burger-button type="arrow" />
 `arrowalt`      | `<tasty-burger-button type="arrowalt" />`    | <tasty-burger-button type="arrowalt" />
 `arrowturn`     | `<tasty-burger-button type="arrowturn" />`    | <tasty-burger-button type="arrowturn" />
 `boring`        | `<tasty-burger-button type="boring" />`    | <tasty-burger-button type="boring" />
