@@ -11,3 +11,8 @@ export const Reversed = () => ({
   components: { BurgerButton },
   template: '<BurgerButton type="arrow" reversed/>'
 })
+
+export const ReversedLegacy = () => ({
+  components: { BurgerButton },
+  template: '<BurgerButton type="arrow-r"/>'
+})

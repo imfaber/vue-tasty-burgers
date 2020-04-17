@@ -28,7 +28,7 @@ export default {
     }
   },
   methods: {
-    toggle (e) {
+    toggle () {
       this.isActive = !this.isActive
       this.$emit('toggle', this.isActive)
     }
@@ -36,8 +36,7 @@ export default {
   watch: {
     active (newValue, oldValue) {
       if (newValue !== oldValue) {
-        this.isActive = newValue
-        this.$emit('toggle', newValue)
+        this.toggle()
       }
     }
   },
