@@ -1,15 +1,14 @@
 <template>
-  <PlainHamburger v-on="$listeners" v-bind="$props"/>
+  <PlainHamburger v-on="$listeners" v-bind="{...$props, ...$attrs}"/>
 </template>
 
 <script>
 import PlainHamburger from '../PlainHamburger.vue'
-import PropsMixins from '../../mixins/props-mixin.js'
 
 export default {
   name: 'Y3DHamburger',
   components: { PlainHamburger },
-  mixins: [PropsMixins]
+  inheritAttrs: false
 }
 </script>
 

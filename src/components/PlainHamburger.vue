@@ -18,6 +18,7 @@
 import PropsMixins from '../mixins/props-mixin.js'
 
 export default {
+  inheritAttrs: false,
   mixins: [PropsMixins],
 
   data () {
@@ -41,9 +42,9 @@ export default {
     }
   },
   computed: {
-    layerStyle: function () {
+    layerStyle () {
       return {
-        'background-color': this.isActive ? this._activeColor : this.color
+        'background-color': this.isActive ? this.activeColor : this.color
       }
     },
     hamburgerModifierClass () {
@@ -52,9 +53,8 @@ export default {
         .replace(/-r-r$/, '-r')
     }
   },
-  created: function () {
+  created () {
     this.isActive = this.active
-    this._activeColor = this.activeColor || this.color
 
     switch (this.size) {
       case 'xs':

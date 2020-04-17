@@ -1,5 +1,5 @@
 <template>
-    <component :is="components[computedType]" v-on="$listeners" v-bind="$props" />
+    <component :is="components[computedType]" v-on="$listeners" v-bind="{...$props, ...$attrs}" />
 </template>
 
 <script>
