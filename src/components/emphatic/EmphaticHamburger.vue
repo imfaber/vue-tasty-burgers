@@ -50,10 +50,10 @@ export default {
     transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 /*
-       * Emphatic Reverse
-       */
+* Emphatic Reverse
+*/
 .hamburger--emphatic-r {
-  height: 40px;
+  padding: 15px;
   overflow: hidden;
 }
 .hamburger--emphatic-r .hamburger-inner {
