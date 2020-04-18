@@ -4,11 +4,12 @@
 Here the full list of available buttons.
 
 
-Type            | Usage example                              | Demo       
+Type            | Usage example                              | Demo
 :----------------|:--------------------------------------------|:--------------------------------------------------:
 `3dx`           | `<tasty-burger-button type="3dx" />`       | <tasty-burger-button type="3dx" />
 `3dy`           | `<tasty-burger-button type="3dy" />`       | <tasty-burger-button type="3dy" />
 `3dxy`          | `<tasty-burger-button type="3dxy" />`      | <tasty-burger-button type="3dxy" />
+`arrow`      | `<tasty-burger-button type="arrow" />`    | <tasty-burger-button type="arrow" />
 `arrowalt`      | `<tasty-burger-button type="arrowalt" />`    | <tasty-burger-button type="arrowalt" />
 `arrowturn`     | `<tasty-burger-button type="arrowturn" />`    | <tasty-burger-button type="arrowturn" />
 `boring`        | `<tasty-burger-button type="boring" />`    | <tasty-burger-button type="boring" />
@@ -22,21 +23,3 @@ Type            | Usage example                              | Demo
 `stand`           | `<tasty-burger-button type="stand" />`    | <tasty-burger-button type="stand" />
 `squeeze`           | `<tasty-burger-button type="squeeze" />`    | <tasty-burger-button type="squeeze" />
 `vortex`           | `<tasty-burger-button type="vortex" />`    | <tasty-burger-button type="vortex" />
-
-
-### Note
-You can reverse the animation by adding `-r` as type suffix.
-
-Type            | Usage example                            | Demo       
-:----------------|:------------------------------------------|:-----------------------------------------:
-`spin`          | `<tasty-burger-button type="spin" />`    | <tasty-burger-button type="spin" />
-`spin-r`        | `<tasty-burger-button type="spin-r" />`  | <tasty-burger-button type="spin-r" />
-
-
-
-
-
-
-
-
-

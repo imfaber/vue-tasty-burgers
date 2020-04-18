@@ -1,9 +1,18 @@
 import TastyBurgerButton from './components/BurgerButton.vue'
 
 function install (Vue, options) {
-  Vue.component('tasty-burger-button', TastyBurgerButton)
-  let key = 'tasty-burger-button'
-  key = (options && options.prefix) ? `${options.prefix}-${key}` : key
+  Vue.component('TastyBurgerButton', TastyBurgerButton)
+  let prefix = ''
+
+  if (options && 'prefix' in options) {
+    prefix = options.prefix
+    prefix = prefix.charAt(0).toUpperCase() + prefix.slice(1)
+    prefix = prefix
+      .replace(/-([a-z])/g, (g) => g[1].toUpperCase())
+      .replace(/-/g, '')
+  }
+
+  const key = `${prefix}TastyBurgerButton`
   Vue.component(key, TastyBurgerButton)
 }
 

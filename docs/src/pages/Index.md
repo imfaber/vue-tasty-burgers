@@ -24,7 +24,7 @@ An easy to use hamburger buttons library for VueJS inspired by the <a href="http
     <div>
         <h4>Arrow 2</h4>
         <tasty-burger-button color="#42b983" type="arrowturn" />
-    </div>    
+    </div>
     <div>
         <h4>Emphatic</h4>
         <tasty-burger-button color="#42b983" type="emphatic" />
@@ -72,13 +72,3 @@ An easy to use hamburger buttons library for VueJS inspired by the <a href="http
 </section>
 
 ---------------------------------------
-
-
-
-
-
-
-
-
-
-
