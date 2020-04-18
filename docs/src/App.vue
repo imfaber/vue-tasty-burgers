@@ -38,7 +38,7 @@ export default {
     display: table;
   }
   .hamburger {
-    padding: 10px;
+    padding: 15px;
   }
 
   .demo {

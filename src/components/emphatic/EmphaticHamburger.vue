@@ -12,9 +12,9 @@ export default {
 </script>
 
 <style>
-.hamburger--emphatic {
-  height: 40px;
+.hamburger.hamburger--emphatic {
   overflow: hidden;
+  padding: 15px;
 }
 .hamburger--emphatic .hamburger-inner {
   transition: background-color 0.125s 0.175s ease-in;
