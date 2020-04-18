@@ -25,7 +25,7 @@ export default {
     }
   },
   methods: {
-    onToggle(active) {
+    onToggle (active) {
       // Toggle menu
     }
   }
