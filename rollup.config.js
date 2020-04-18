@@ -9,32 +9,29 @@ import pkg from './package.json';
 
 const LIB_NAME = pkg.name;
 
-export default {
-  input: 'src/index.js',
-  output: {
-    file: `dist/${LIB_NAME}.js`,
-    format: 'es',
-    sourcemap: false
+export default [
+  {
+    input: 'src/index.js',
+    output: {
+      file: `dist/${LIB_NAME}.js`,
+      format: 'es'
+    },
+    plugins: [
+      resolve({
+        jsnext: true,
+        main: true,
+        browser: true,
+      }),
+      commonjs(),
+      vue(),
+      babel({
+        exclude: 'node_modules/**',
+        runtimeHelpers: true
+      }),
+      replace({
+        ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
+      }),
+      (process.env.NODE_ENV === 'production' && terser({}, minify))
+    ],
   },
-  inlineDynamicImports: true,
-  plugins: [
-    resolve({
-      jsnext: true,
-      main: true,
-      browser: true,
-    }),
-    commonjs(),
-    vue({
-      compileTemplate: true,
-      css: `dist/${LIB_NAME}.css`
-    }),
-    babel({
-      exclude: 'node_modules/**',
-      runtimeHelpers: true
-    }),
-    replace({
-      ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
-    }),
-    (process.env.NODE_ENV === 'production' && terser({}, minify))
-  ],
-};
+];
