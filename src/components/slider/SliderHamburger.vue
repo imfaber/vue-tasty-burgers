@@ -27,16 +27,16 @@ export default {
   top: 20px;
 }
 
-.hamburger--slider.is-active .hamburger-inner {
+.hamburger--slider.hamburger--active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
 
-.hamburger--slider.is-active .hamburger-inner__before {
+.hamburger--slider.hamburger--active .hamburger-inner__before {
   transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
   opacity: 0;
 }
 
-.hamburger--slider.is-active .hamburger-inner__after {
+.hamburger--slider.hamburger--active .hamburger-inner__after {
   transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
 /*
@@ -54,14 +54,14 @@ export default {
 .hamburger--slider-r .hamburger-inner__after {
   top: 20px;
 }
-.hamburger--slider-r.is-active .hamburger-inner {
+.hamburger--slider-r.hamburger--active .hamburger-inner {
   transform: translate3d(0, 10px, 0) rotate(-45deg);
 }
-.hamburger--slider-r.is-active .hamburger-inner__before {
+.hamburger--slider-r.hamburger--active .hamburger-inner__before {
   transform: rotate(45deg) translate3d(5.71429px, -6px, 0);
   opacity: 0;
 }
-.hamburger--slider-r.is-active .hamburger-inner__after {
+.hamburger--slider-r.hamburger--active .hamburger-inner__after {
   transform: translate3d(0, -20px, 0) rotate(90deg);
 }
 </style>

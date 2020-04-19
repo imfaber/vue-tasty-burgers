@@ -43,6 +43,7 @@ Name                 | Type       | Default      | Required | Description
 `color`             | String     | #00000       | false    | The color of the button in its default state
 `activeColor`        | String     | #00000       | false    | The color of the button in its active state
 `reversed`        | Boolean     | false       | false    | Reverse the animation of the button
+`rounded`        | Boolean     | true       | false    | Whether to use rounded borders
 
 ### Events
 

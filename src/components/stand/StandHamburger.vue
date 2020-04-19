@@ -23,19 +23,19 @@ export default {
   transition: bottom 0.075s 0.075s ease-in,
     transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.hamburger--stand.is-active .hamburger-inner {
+.hamburger--stand.hamburger--active .hamburger-inner {
   transform: rotate(90deg);
   background-color: transparent !important;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1),
     background-color 0s 0.15s linear;
 }
-.hamburger--stand.is-active .hamburger-inner__before {
+.hamburger--stand.hamburger--active .hamburger-inner__before {
   top: 0;
   transform: rotate(-45deg);
   transition: top 0.075s 0.1s ease-out,
     transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.hamburger--stand.is-active .hamburger-inner__after {
+.hamburger--stand.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: rotate(45deg);
   transition: bottom 0.075s 0.1s ease-out,
@@ -56,19 +56,19 @@ export default {
   transition: bottom 0.075s 0.075s ease-in,
     transform 0.075s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.hamburger--stand-r.is-active .hamburger-inner {
+.hamburger--stand-r.hamburger--active .hamburger-inner {
   transform: rotate(-90deg);
   background-color: transparent !important;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1),
     background-color 0s 0.15s linear;
 }
-.hamburger--stand-r.is-active .hamburger-inner__before {
+.hamburger--stand-r.hamburger--active .hamburger-inner__before {
   top: 0;
   transform: rotate(-45deg);
   transition: top 0.075s 0.1s ease-out,
     transform 0.075s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.hamburger--stand-r.is-active .hamburger-inner__after {
+.hamburger--stand-r.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: rotate(45deg);
   transition: bottom 0.075s 0.1s ease-out,

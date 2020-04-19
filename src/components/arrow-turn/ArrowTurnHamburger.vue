@@ -12,25 +12,25 @@ export default {
 </script>
 
 <style>
-.hamburger--arrowturn.is-active .hamburger-inner {
+.hamburger--arrowturn.hamburger--active .hamburger-inner {
   transform: rotate(-180deg);
 }
-.hamburger--arrowturn.is-active .hamburger-inner__before {
+.hamburger--arrowturn.hamburger--active .hamburger-inner__before {
   transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
-.hamburger--arrowturn.is-active .hamburger-inner__after {
+.hamburger--arrowturn.hamburger--active .hamburger-inner__after {
   transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 /*
      * Arrow Turn Right
      */
-.hamburger--arrowturn-r.is-active .hamburger-inner {
+.hamburger--arrowturn-r.hamburger--active .hamburger-inner {
   transform: rotate(-180deg);
 }
-.hamburger--arrowturn-r.is-active .hamburger-inner__before {
+.hamburger--arrowturn-r.hamburger--active .hamburger-inner__before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
-.hamburger--arrowturn-r.is-active .hamburger-inner__after {
+.hamburger--arrowturn-r.hamburger--active .hamburger-inner__after {
   transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 </style>

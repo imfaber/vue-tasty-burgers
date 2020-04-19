@@ -28,19 +28,19 @@ export default {
 .hamburger--vortex .hamburger-inner__after {
   transition-property: bottom, transform;
 }
-.hamburger--vortex.is-active .hamburger-inner {
+.hamburger--vortex.hamburger--active .hamburger-inner {
   transform: rotate(765deg);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-.hamburger--vortex.is-active .hamburger-inner__before,
-.hamburger--vortex.is-active .hamburger-inner__after {
+.hamburger--vortex.hamburger--active .hamburger-inner__before,
+.hamburger--vortex.hamburger--active .hamburger-inner__after {
   transition-delay: 0s;
 }
-.hamburger--vortex.is-active .hamburger-inner__before {
+.hamburger--vortex.hamburger--active .hamburger-inner__before {
   top: 0;
   opacity: 0;
 }
-.hamburger--vortex.is-active .hamburger-inner__after {
+.hamburger--vortex.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: rotate(90deg);
 }
@@ -63,19 +63,19 @@ export default {
 .hamburger--vortex-r .hamburger-inner__after {
   transition-property: bottom, transform;
 }
-.hamburger--vortex-r.is-active .hamburger-inner {
+.hamburger--vortex-r.hamburger--active .hamburger-inner {
   transform: rotate(-765deg);
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-.hamburger--vortex-r.is-active .hamburger-inner__before,
-.hamburger--vortex-r.is-active .hamburger-inner__after {
+.hamburger--vortex-r.hamburger--active .hamburger-inner__before,
+.hamburger--vortex-r.hamburger--active .hamburger-inner__after {
   transition-delay: 0s;
 }
-.hamburger--vortex-r.is-active .hamburger-inner__before {
+.hamburger--vortex-r.hamburger--active .hamburger-inner__before {
   top: 0;
   opacity: 0;
 }
-.hamburger--vortex-r.is-active .hamburger-inner__after {
+.hamburger--vortex-r.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: rotate(-90deg);
 }

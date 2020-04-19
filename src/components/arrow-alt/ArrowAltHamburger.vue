@@ -21,13 +21,13 @@ export default {
   transition: bottom 0.1s 0.1s ease,
     transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.hamburger--arrowalt.is-active .hamburger-inner__before {
+.hamburger--arrowalt.hamburger--active .hamburger-inner__before {
   top: 0;
   transform: translate3d(-8px, -10px, 0) rotate(-45deg) scale(0.7, 1);
   transition: top 0.1s ease,
     transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-.hamburger--arrowalt.is-active .hamburger-inner__after {
+.hamburger--arrowalt.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: translate3d(-8px, 10px, 0) rotate(45deg) scale(0.7, 1);
   transition: bottom 0.1s ease,
@@ -44,13 +44,13 @@ export default {
   transition: bottom 0.1s 0.1s ease,
     transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.hamburger--arrowalt-r.is-active .hamburger-inner__before {
+.hamburger--arrowalt-r.hamburger--active .hamburger-inner__before {
   top: 0;
   transform: translate3d(8px, -10px, 0) rotate(45deg) scale(0.7, 1);
   transition: top 0.1s ease,
     transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
-.hamburger--arrowalt-r.is-active .hamburger-inner__after {
+.hamburger--arrowalt-r.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: translate3d(8px, 10px, 0) rotate(-45deg) scale(0.7, 1);
   transition: bottom 0.1s ease,

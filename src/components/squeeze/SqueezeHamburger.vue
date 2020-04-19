@@ -23,17 +23,17 @@ export default {
   transition: bottom 0.075s 0.12s ease,
     transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.hamburger--squeeze.is-active .hamburger-inner {
+.hamburger--squeeze.hamburger--active .hamburger-inner {
   transform: rotate(45deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.hamburger--squeeze.is-active .hamburger-inner__before {
+.hamburger--squeeze.hamburger--active .hamburger-inner__before {
   top: 0;
   opacity: 0;
   transition: top 0.075s ease, opacity 0.075s 0.12s ease;
 }
-.hamburger--squeeze.is-active .hamburger-inner__after {
+.hamburger--squeeze.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.075s ease,

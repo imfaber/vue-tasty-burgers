@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   body{
     overflow-y: auto !important;
   }
@@ -37,8 +37,13 @@ export default {
   .markdown-section table {
     display: table;
   }
-  .hamburger {
-    padding: 10px;
+
+  h4 {
+    margin: 1rem 0;
+  }
+
+  .hamburger{
+    padding: 15px!important;
   }
 
   .demo {

@@ -2,7 +2,7 @@
   <button
     type="button"
     class="hamburger"
-    :class="[hamburgerModifierClass, { 'is-active': isActive }]"
+    :class="[hamburgerModifierClass, { 'hamburger--active': isActive, 'hamburger--rounded': rounded}]"
     @click.prevent="toggle"
   >
     <span class="hamburger-box" :style="buttonStyle">
@@ -97,7 +97,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .hamburger {
   padding: 0;
   display: inline-block;
@@ -144,11 +144,18 @@ export default {
   width: 40px;
   height: 4px;
   background-color: #000;
-  border-radius: 4px;
   position: absolute;
   transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease;
+}
+
+.hamburger.hamburger--rounded {
+  .hamburger-inner,
+  .hamburger-inner__before,
+  .hamburger-inner__after {
+    border-radius: 4px;
+  }
 }
 
 .hamburger-inner__before,

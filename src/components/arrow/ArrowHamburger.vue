@@ -11,19 +11,19 @@ export default {
 }
 </script>
 <style>
-.hamburger--arrow.is-active .hamburger-inner__before {
+.hamburger--arrow.hamburger--active .hamburger-inner__before {
   transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
-.hamburger--arrow.is-active .hamburger-inner__after {
+.hamburger--arrow.hamburger--active .hamburger-inner__after {
   transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 /*
        * Arrow Right
        */
-.hamburger--arrow-r.is-active .hamburger-inner__before {
+.hamburger--arrow-r.hamburger--active .hamburger-inner__before {
   transform: translate3d(8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
-.hamburger--arrow-r.is-active .hamburger-inner__after {
+.hamburger--arrow-r.hamburger--active .hamburger-inner__after {
   transform: translate3d(8px, 0, 0) rotate(-45deg) scale(0.7, 1);
 }
 </style>
