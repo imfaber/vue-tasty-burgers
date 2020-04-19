@@ -1,14 +1,13 @@
 # Vue Tasty Burgers
 
-<p align="center">
+<p align="left">
     <img alt="build" src="https://github.com/imfaber/vue-tasty-burgers/workflows/Build/badge.svg?branch=master">
     <a href="https://www.npmjs.com/package/vue-tasty-burgers" target="_brlak">
         <img alt="npm" src="https://img.shields.io/npm/v/vue-tasty-burgers">
     </a>
 </p>
 
-> An easy to use hamburger buttons library for VueJS.
-Inspired by [AMBURGERS](https://jonsuh.com/hamburgers/)
+> An easy to use hamburger buttons library for VueJS. Inspired by [AMBURGERS](https://jonsuh.com/hamburgers/)
 
 ![Basic Screenshot](https://raw.githubusercontent.com/imfaber/vue-tasty-burgers/master/README/vtb_demo.gif)
 
