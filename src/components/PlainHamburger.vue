@@ -97,7 +97,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .hamburger {
   padding: 0;
   display: inline-block;
