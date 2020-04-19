@@ -23,17 +23,17 @@ export default {
   transition: bottom 0.1s 0.25s ease-in,
     transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.hamburger--spin.is-active .hamburger-inner {
+.hamburger--spin.hamburger--active .hamburger-inner {
   transform: rotate(225deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.hamburger--spin.is-active .hamburger-inner__before {
+.hamburger--spin.hamburger--active .hamburger-inner__before {
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
-.hamburger--spin.is-active .hamburger-inner__after {
+.hamburger--spin.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out,
@@ -53,17 +53,17 @@ export default {
   transition: bottom 0.1s 0.25s ease-in,
     transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-.hamburger--spin-r.is-active .hamburger-inner {
+.hamburger--spin-r.hamburger--active .hamburger-inner {
   transform: rotate(-225deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.hamburger--spin-r.is-active .hamburger-inner__before {
+.hamburger--spin-r.hamburger--active .hamburger-inner__before {
   top: 0;
   opacity: 0;
   transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
-.hamburger--spin-r.is-active .hamburger-inner__after {
+.hamburger--spin-r.hamburger--active .hamburger-inner__after {
   bottom: 0;
   transform: rotate(90deg);
   transition: bottom 0.1s ease-out,

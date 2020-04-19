@@ -30,19 +30,19 @@ export default {
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
     top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
 }
-.hamburger--emphatic.is-active .hamburger-inner {
+.hamburger--emphatic.hamburger--active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
-.hamburger--emphatic.is-active .hamburger-inner__before {
+.hamburger--emphatic.hamburger--active .hamburger-inner__before {
   left: -80px;
   top: -80px;
   transform: translate3d(80px, 80px, 0) rotate(45deg);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear,
     transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.hamburger--emphatic.is-active .hamburger-inner__after {
+.hamburger--emphatic.hamburger--active .hamburger-inner__after {
   right: -80px;
   top: -80px;
   transform: translate3d(-80px, 80px, 0) rotate(-45deg);
@@ -70,19 +70,19 @@ export default {
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
     top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
 }
-.hamburger--emphatic-r.is-active .hamburger-inner {
+.hamburger--emphatic-r.hamburger--active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
-.hamburger--emphatic-r.is-active .hamburger-inner__before {
+.hamburger--emphatic-r.hamburger--active .hamburger-inner__before {
   left: -80px;
   top: 80px;
   transform: translate3d(80px, -80px, 0) rotate(-45deg);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear,
     transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.hamburger--emphatic-r.is-active .hamburger-inner__after {
+.hamburger--emphatic-r.hamburger--active .hamburger-inner__after {
   right: -80px;
   top: 80px;
   transform: translate3d(-80px, -80px, 0) rotate(45deg);

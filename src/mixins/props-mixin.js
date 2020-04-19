@@ -25,7 +25,11 @@ export default {
     },
     reversed: {
       type: Boolean,
-      default: () => false
+      default: false
+    },
+    rounded: {
+      type: Boolean,
+      default: true
     }
   }
 }
