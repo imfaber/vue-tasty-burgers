@@ -9,5 +9,5 @@ export const Default = () => ({
 
 export const Flat = () => ({
   components: { BurgerButton },
-  template: '<BurgerButton :rounded="false" />',
+  template: '<BurgerButton :rounded="false" />'
 })
